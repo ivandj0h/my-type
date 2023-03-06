@@ -25,6 +25,28 @@ to `Install` TypeScript, simply :
 
 - Then run `tsc -init` to generate configuration file (`tsconfig.json`)
 
+    for this project i use code below on `tsconfig`, here they are :
+
+    ```json
+    {
+    "compilerOptions": {
+        "target": "es2015",
+        "module": "commonjs",
+        "declaration": true,
+        "outDir": "./dist",
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
+    }
+
+    ```
+
 ### 2. Folder Structure
 
 Here is the folder Structure of this `My Type` Project :
@@ -41,3 +63,8 @@ my-type
     ├── .markdownlint.json
     └── tsconfig.json
 </pre>
+
+## Author
+
+[ivandjoh]()  
+[delvin]()
