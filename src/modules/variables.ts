@@ -3,15 +3,7 @@
  * Author : Ivandjoh
  */
 
-function printPersonName(fullName: string): void {
-    console.log(`Hello, My Name is : ${fullName}`)
-}
+const fullName = "juna";
+const age = 7;
 
-function printPersonAge(age: number): void {
-    console.log(`My Age : ${age}`)
-}
-
-export {
-    printPersonName,
-    printPersonAge
-}
+export { fullName, age };

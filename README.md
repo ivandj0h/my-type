@@ -6,13 +6,13 @@ On Progress of Development!!
 
 ## Description
 
-`My Type` is [Typescript](https://www.typescriptlang.org/) project that i was created to learn how to build an api using `TypeScript`.
+`My Type` is [Typescript](https://www.typescriptlang.org/) project that i was created to learn how to build an api using `TypeScript`
 
 ### 1. Installation & Configuration
 
 to `Install` TypeScript, simply :
 
-- Go to  [Typescript](https://www.typescriptlang.org/) website and follow the instruction, but make sure you already have [nodejs](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) already installed on your machine.
+- Go to  [Typescript](https://www.typescriptlang.org/) website and follow the instruction, but make sure you already have [nodejs](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) already installed on your machine
 - Setup `ts-node` on your local computer `npm i -g ts-node`
 - Install `Code Runner` extension, if you're using [vscode](https://code.visualstudio.com/)
 - Then in `vscode` open `settings.json` and add this two lines :
@@ -63,6 +63,21 @@ my-type
     ├── .markdownlint.json
     └── tsconfig.json
 </pre>
+
+### Running The Project
+
+To Run this Project, there are several `Options` :  
+
+- simply type `node index.js` on your terminal or  
+- run `npm init -y` on your terminal and find key name `scripts` on your `package.json`  
+
+    ```javascript
+    "scripts": {
+        "start": "node index.js"
+    },
+    ```  
+
+    change with that script
 
 ## Author
 
