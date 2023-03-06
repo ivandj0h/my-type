@@ -2,16 +2,16 @@
 
 ### Description
 
-`My Type` is [Typescript](https://www.typescriptlang.org/) project that i created to learn how to build an api.
+`My Type` is [Typescript](https://www.typescriptlang.org/) project that i was created to learn how to build an api using `TypeScript`.
 
 ### Installation & Configuration
 
 to `Install` TypeScript, simply :
 
-- Go to  [Typescript](https://www.typescriptlang.org/) and follow the instruction.
+- Go to  [Typescript](https://www.typescriptlang.org/) website and follow the instruction, but make sure you already have [nodejs](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) already installed on your machine.
 - Setup `ts-node` on your local computer `npm i -g ts-node`
 - Install `Code Runner` extension, if you're using [vscode](https://code.visualstudio.com/)
-- in `vscode` open `settings.json` and add this two lines :
+- Then in `vscode` open `settings.json` and add this two lines :
 
     ```json
     "code-runner.clearPreviousOutput": true,
