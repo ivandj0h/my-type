@@ -1,5 +1,5 @@
-import { app } from './src/app'
+import { app } from "./src/app";
 
 (() => {
-    app()
-})()
+    app();
+})();
