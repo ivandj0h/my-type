@@ -1,9 +1,5 @@
-import {
-    printPersonName,
-    printPersonAge
-} from './src/variables'
+import { app } from './src/app'
 
 (() => {
-    printPersonName("juna")
-    printPersonAge(3)
+    app()
 })()
