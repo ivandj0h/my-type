@@ -1,7 +1,7 @@
 # My Type
 
 ```bash
-On Progress of Development!!
+On Progress of Development
 ```
 
 ## Description
@@ -10,46 +10,63 @@ On Progress of Development!!
 
 ### 1. Installation & Configuration
 
-to `Install` TypeScript, simply :
+To Develop this project from scratch, you have to do several steps below :  
 
-- Go to  [Typescript](https://www.typescriptlang.org/) website and follow the instruction, but make sure you already have [nodejs](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) already installed on your machine
-- Setup `ts-node` on your local computer `npm i -g ts-node`
-- Install `Code Runner` extension, if you're using [vscode](https://code.visualstudio.com/)
-- Then in `vscode` open `settings.json` and add this two lines :
+- Open `Terminal` or `Command Prompt`
+- Type `npm init -y`  
+- You can Install TypeScript as `dev dependencies` by running this command `npm install typescript --save-dev` and followed by adding `npm install @types/node --save-dev` (is because of use typescript)  
+or you can `Install` TypeScript Globally on your Machine by following these steps :  
 
-    ```json
-    "code-runner.clearPreviousOutput": true,
-    "code-runner.showExecutionMessage": false,
-    "editor.minimap.enabled": true,
-    ```
+    - Go to  [Typescript](https://www.typescriptlang.org/) website and follow the instruction, but make sure you already have [nodejs](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) already installed on your machine  
+    - Setup `ts-node` on your local computer `npm i -g ts-node`  
+    - Install `Code Runner` extension, if you're using [vscode](https://code.visualstudio.com/)  
+    - Then in `vscode` open `settings.json` and add this two lines :
 
-- Then run `tsc -init` to generate configuration file (`tsconfig.json`)
+        ```json
+        "code-runner.clearPreviousOutput": true,
+        "code-runner.showExecutionMessage": false,
+        "editor.minimap.enabled": true,
+        ```  
 
+    - Then run `tsc -init` to generate configuration file (`tsconfig.json`)  
     for this project i use code below on `tsconfig`, here they are :
 
-    ```json
-    {
-    "compilerOptions": {
-        "target": "es2015",
-        "module": "commonjs",
-        "declaration": true,
-        "outDir": "./dist",
-        "strict": true,
-        "noUnusedLocals": true,
-        "noUnusedParameters": true,
-        "esModuleInterop": true,
-        "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true
-    },
-    "include": ["src/**/*"],
-    "exclude": ["node_modules"]
-    }
+        ```json  
+        {
+        "compilerOptions": {
+            "target": "es5",
+            "module": "commonjs",
+            "declaration": true,
+            "allowJs": true,
+            "rootDir": "",
+            "outDir": "./dist",
+            "strict": true,
+            "noUnusedLocals": true,
+            "noImplicitAny": true,
+            "noUnusedParameters": true,
+            "esModuleInterop": true,
+            "skipLibCheck": true,
+            "forceConsistentCasingInFileNames": true
+            }
+        }
+        ```  
 
-    ```
+    - to watch for changes to our code and automatically restart when a file is changed, you need another `Package` name `Nodemon`.  
+    you can install it as `dev dependencies` by typing `npm install --save-dev ts-node nodemon`  
+    - Next Create file `nodemon.json` in your project root and add folowing `script` :  
+
+        ```javascript
+        {
+            "watch": ["*"],
+            "ext": ".ts,.js",
+            "ignore": [],
+            "exec": "npx ts-node ./index.ts"
+        }
+        ```
 
 ### 2. Folder Structure
 
-Here is the folder Structure of this `My Type` Project :
+Here is the folder Structure of this `My Type` Project, this Structure will be update when i add new file on it
 
 <pre>
 my-type  
@@ -58,28 +75,46 @@ my-type
     │   ├── modules  
     │   │   ├── variables.ts  
     │   ├── app.ts  
-    ├── index.ts
-    ├── package.json
+    ├── .gitignore
     ├── .markdownlint.json
+    ├── index.ts
+    ├── nodemon.json
+    ├── package-lock.json
+    ├── package.json
+    ├── README.md
     └── tsconfig.json
 </pre>
 
 ### Running The Project
 
-To Run this Project, there are several `Options` :  
+Before running the project, make sure you modify the `package.json` file by add this script below :  
 
-- simply type `node index.js` on your terminal or  
-- run `npm init -y` on your terminal and find key name `scripts` on your `package.json`  
+```javascript
+    {
+        ...
+        "start:dev": "npx nodemon",
+        ...
+    }
+```
 
-    ```javascript
-    "scripts": {
-        "start": "node index.js"
-    },
-    ```  
+After added those script, then you can type  
 
-    change with that script
+```javascript
+npm run start:dev
+```  
 
-## Author
+on your `terminal` or `command prompt`  
 
-[ivandjoh]()  
-[delvin]()
+### Build The Project
+
+```javascript
+Docs will be update soon
+```
+
+## Credits
+
+Version :   
+**`1.0.0-alpha`**  
+Authors :  
+**[ivandjoh]()**  
+**[delvin]()**

@@ -3,7 +3,7 @@
  * Author : Ivandjoh
  */
 
-const fullName = "juna";
+const fullName = "Juna Djoh";
 const age = 7;
 
 export { fullName, age };
