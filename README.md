@@ -1,5 +1,9 @@
 # My Type
 
+```bash
+On Progress of Development!!
+```
+
 ## Description
 
 `My Type` is [Typescript](https://www.typescriptlang.org/) project that i was created to learn how to build an api using `TypeScript`.
@@ -30,11 +34,9 @@ my-type
     ├── dist/
     ├── src/  
     │   ├── modules  
-    │       ├── variables.ts  
+    │   │   ├── variables.ts  
+    │   ├── app.ts  
     ├── index.ts
     ├── package.json
     └── tsconfig.json
 </pre>
-
-│   └── app.ts
-├── node_modules/
