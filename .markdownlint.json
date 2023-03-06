@@ -1,5 +1,12 @@
 {
+  "default": true,
+  "MD001": false,
+  "MD022": false,
+  "MD029": {
+    "ol-prefix": "ordered"
+  },
   "MD033": {
-    "allowed_elements": ["nobr", "sup"]
-  }
+    "allowed_elements": ["nobr", "sup", "pre"]
+  },
+  "MD041": false
 }

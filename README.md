@@ -38,5 +38,6 @@ my-type
     │   ├── app.ts  
     ├── index.ts
     ├── package.json
+    ├── .markdownlint.json
     └── tsconfig.json
 </pre>
