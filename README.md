@@ -1,10 +1,10 @@
 # My Type
 
-### Description
+## Description
 
 `My Type` is [Typescript](https://www.typescriptlang.org/) project that i was created to learn how to build an api using `TypeScript`.
 
-### Installation & Configuration
+### 1. Installation & Configuration
 
 to `Install` TypeScript, simply :
 
@@ -20,3 +20,21 @@ to `Install` TypeScript, simply :
     ```
 
 - Then run `tsc -init` to generate configuration file (`tsconfig.json`)
+
+### 2. Folder Structure
+
+Here is the folder Structure of this `My Type` Project :
+
+<pre>
+my-type  
+    ├── dist/
+    ├── src/  
+    │   ├── modules  
+    │       ├── variables.ts  
+    ├── index.ts
+    ├── package.json
+    └── tsconfig.json
+</pre>
+
+│   └── app.ts
+├── node_modules/
