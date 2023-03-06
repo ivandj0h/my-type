@@ -1,0 +1,16 @@
+{
+  "name": "my-type",
+  "version": "1.0.0",
+  "description": "My Type",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "npx nodemon"
+  },
+  "keywords": [],
+  "author": "ivandjoh",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.21",
+    "ts-node": "^10.9.1"
+  }
+}
