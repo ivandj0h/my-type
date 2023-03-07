@@ -85,7 +85,7 @@ my-type
     └── tsconfig.json
 </pre>
 
-### Running The Project
+### 3. Running The Project
 
 Before running the project, make sure you modify the `package.json` file by add this script below :  
 
@@ -105,16 +105,48 @@ npm run start:dev
 
 on your `terminal` or `command prompt`  
 
-### Build The Project
+### 4. Build The Project
+
+In order to clean and compile the project for production, we can add a build script.  
+you can use `rimraf`, a cross-platform tool that acts like the `rm -rf` command, and to install `rimraf` just typing `npm install --save-dev rimraf` and add this line into your `package.json` :
 
 ```javascript
-Docs will be update soon
+    {
+        ...
+        "build": "rimraf ./build && tsc",
+        ...
+    }
 ```
+
+Now you can run :
+
+```javascript
+npm run build
+```
+
+`rimraf` will remove our old build folder before the TypeScript compiler emits new code to dist
+
+### 5. Production startup script
+
+In order to start the app in `Production`, all we need to do is run the build command first, and then execute the compiled JavaScript at `dist/index.js`
+
+You can add this line in your `package.json` file :
+
+```javascript
+    {
+        ...
+        "start": "npm run build && node build/index.js"
+        ...
+    }
+```
+
+That's it!!
+Happy coding...
 
 ## Credits
 
 Version :   
 **`1.0.0-alpha`**  
 Authors :  
-**[ivandjoh]()**  
-**[delvin]()**
+**[ivandjoh](https://ivandjoh.com)**  
+**[delvin](https://ivandjoh.com)**
