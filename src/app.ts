@@ -13,6 +13,8 @@ import { getTypeAlias } from './modules/type-alias'
 import { city } from './modules/tupples'
 import { user } from './modules/enum'
 import { printUnknownInput } from './modules/unknown'
+import { getUserDataSave } from './modules/literal-type'
+import { formatName } from './modules/functions'
 
 // string function
 function printPersonName(fullName: string, age: number): void {
@@ -39,6 +41,9 @@ const app = () => {
     getCityInfos(city)
     console.log(user)
     printUnknownInput()
+    getUserDataSave()
+    console.log(formatName("juna"))
+    console.log(formatName("dave", "djoh"))
 };
 
 export default app
