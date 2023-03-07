@@ -6,7 +6,14 @@ On Progress of Development
 
 ## Description
 
-`My Type` is [Typescript](https://www.typescriptlang.org/) project that i was created to learn the Basics of `TypeScript` and how it works.
+`My Type` is [Typescript](https://www.typescriptlang.org/) project that i was created to learn the Basics of `TypeScript` and how it works.  
+In this `Repo` you can find such as :  
+
+- Arrays  
+- Enum
+- Tupple
+- Unknown
+- etc
 
 ### 1. Installation & Configuration
 
