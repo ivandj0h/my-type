@@ -13,6 +13,8 @@ In this `Repo` you can find such as :
 - Enum
 - Tupple
 - Unknown
+- function
+- object
 - etc
 
 ### 1. Installation & Configuration
@@ -81,6 +83,14 @@ my-type
     ├── src/  
     │   ├── modules  
     │   │   ├── arrays.ts  
+    │   │   ├── enum.ts  
+    │   │   ├── functions.ts  
+    │   │   ├── literal-type.ts  
+    │   │   ├── objects.ts  
+    │   │   ├── tupples.ts  
+    │   │   ├── type-alias.ts  
+    │   │   ├── union-types.ts  
+    │   │   ├── unknown.ts  
     │   │   ├── variables.ts  
     │   ├── app.ts  
     ├── .gitignore
