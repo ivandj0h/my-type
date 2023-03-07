@@ -10,6 +10,9 @@ import { names, numbs } from "./modules/arrays";
 import { dog } from './modules/objects'
 import { userId, customers } from './modules/union-types'
 import { getTypeAlias } from './modules/type-alias'
+import { city } from './modules/tupples'
+import { user } from './modules/enum'
+import { printUnknownInput } from './modules/unknown'
 
 // string function
 function printPersonName(fullName: string, age: number): void {
@@ -20,7 +23,10 @@ function printPersonName(fullName: string, age: number): void {
 names.push("juna")
 names.push("dave")
 
-
+// get City Infos
+function getCityInfos(city: [name: string, area: number, population: number]): void {
+    console.log(city)
+}
 
 const app = () => {
     printPersonName(fullName, age);
@@ -30,6 +36,9 @@ const app = () => {
     console.log(userId)
     console.log(customers)
     getTypeAlias({ name: 'juna', age: 7 })
+    getCityInfos(city)
+    console.log(user)
+    printUnknownInput()
 };
 
 export default app
