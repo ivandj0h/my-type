@@ -6,7 +6,7 @@ On Progress of Development
 
 ## Description
 
-`My Type` is [Typescript](https://www.typescriptlang.org/) project that i was created to learn how to build an api using `TypeScript`
+`My Type` is [Typescript](https://www.typescriptlang.org/) project that i was created to learn the Basics of `TypeScript` and how it works.
 
 ### 1. Installation & Configuration
 
@@ -73,6 +73,7 @@ my-type
     ├── dist/
     ├── src/  
     │   ├── modules  
+    │   │   ├── arrays.ts  
     │   │   ├── variables.ts  
     │   ├── app.ts  
     ├── .gitignore
